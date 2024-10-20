@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+</head>
+
+<body>
+    <h1>Text to Speech Converter</h1>
+    <textarea id="text-input" rows="4" cols="50" placeholder="Enter text here..."></textarea><br>
+
+    <label for="voice-select">Choose Voice:</label>
+    <select id="voice-select">
+        <option value="female">Female (Microsoft Zira)</option>
+        <option value="male">Male (Microsoft David)</option>
+    </select><br>
+
+    <label for="speed-input">Set Speed (words per minute):</label>
+    <input type="number" id="speed-input" value="150" min="50" max="300"><br>
+
+    <button id="speak-button">Speak</button>
+
+    <audio id="audio" controls></audio>
+
+    <!-- Move script here -->
+    <script src="static/script.js"></script>
+</body>
+
+</html>
